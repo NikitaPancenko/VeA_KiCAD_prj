@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PWR_supply_TPS7A0233PDQNR)(type Legacy)(uri ${KIPRJMOD}/Apzimejumi/PWR_supply_TPS7A0233PDQNR.lib)(options "")(descr ""))
+)

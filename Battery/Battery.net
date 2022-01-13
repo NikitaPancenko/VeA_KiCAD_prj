@@ -1,0 +1,42 @@
+(export (version D)
+  (design
+    (source C:\Users\User\Desktop\Battery\Battery.sch)
+    (date "17.11.2021 22:07:54")
+    (tool "Eeschema (5.1.8)-1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source Battery.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref BT1)
+      (value Battery_Cell)
+      (footprint Battery_Holder:SMTU2032)
+      (datasheet ~)
+      (libsource (lib Device) (part Battery_Cell) (description "Single-cell battery"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 61954F91)))
+  (libparts
+    (libpart (lib Device) (part Battery_Cell)
+      (description "Single-cell battery")
+      (docs ~)
+      (fields
+        (field (name Reference) BT)
+        (field (name Value) Battery_Cell))
+      (pins
+        (pin (num 1) (name +) (type passive))
+        (pin (num 2) (name -) (type passive)))))
+  (libraries
+    (library (logical Device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib")))
+  (nets
+    (net (code 1) (name GND)
+      (node (ref BT1) (pin 2)))
+    (net (code 2) (name +3V3)
+      (node (ref BT1) (pin 1)))))

@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1350 1300 2100 1450
+U 61668613
+F0 "220V AC -> DC" 50
+F1 "file61668612.sch" 50
+F2 "VCC" I R 3450 1750 50 
+F3 "GND" I R 3450 1850 50 
+$EndSheet
+$Sheet
+S 7550 1300 2150 1550
+U 61668997
+F0 "5V DC" 50
+F1 "file61668996.sch" 50
+F2 "GND" I R 9700 1850 50 
+F3 "VCC" I L 7550 1700 50 
+F4 "5V_DC" I R 9700 1550 50 
+$EndSheet
+$Sheet
+S 4200 1250 2450 1550
+U 61668AA9
+F0 "3,3V DC" 50
+F1 "file61668AA8.sch" 50
+F2 "VCC" I L 4200 1750 50 
+F3 "GND" I L 4200 1950 50 
+F4 "3V3_DC" I R 6650 1850 50 
+$EndSheet
+Text GLabel 3450 1750 2    50   Input ~ 0
+VCC
+Text GLabel 6600 4050 0    50   Input ~ 0
+VCC
+Text GLabel 1850 3900 0    50   Input ~ 0
+VCC
+Text GLabel 7550 1700 0    50   Input ~ 0
+VCC
+Text GLabel 4200 1750 0    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR02
+U 1 1 616A028D
+P 9700 1850
+F 0 "#PWR02" H 9700 1600 50  0001 C CNN
+F 1 "GND" V 9705 1722 50  0000 R CNN
+F 2 "" H 9700 1850 50  0001 C CNN
+F 3 "" H 9700 1850 50  0001 C CNN
+	1    9700 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 616A079A
+P 3450 1850
+F 0 "#PWR01" H 3450 1600 50  0001 C CNN
+F 1 "GND" V 3455 1722 50  0000 R CNN
+F 2 "" H 3450 1850 50  0001 C CNN
+F 3 "" H 3450 1850 50  0001 C CNN
+	1    3450 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 616A08CE
+P 6600 4150
+F 0 "#PWR04" H 6600 3900 50  0001 C CNN
+F 1 "GND" V 6605 4022 50  0000 R CNN
+F 2 "" H 6600 4150 50  0001 C CNN
+F 3 "" H 6600 4150 50  0001 C CNN
+	1    6600 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 616A09E2
+P 4200 1950
+F 0 "#PWR03" H 4200 1700 50  0001 C CNN
+F 1 "GND" V 4205 1822 50  0000 R CNN
+F 2 "" H 4200 1950 50  0001 C CNN
+F 3 "" H 4200 1950 50  0001 C CNN
+	1    4200 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 616A0B02
+P 1850 4250
+F 0 "#PWR05" H 1850 4000 50  0001 C CNN
+F 1 "GND" V 1855 4122 50  0000 R CNN
+F 2 "" H 1850 4250 50  0001 C CNN
+F 3 "" H 1850 4250 50  0001 C CNN
+	1    1850 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 9100 3950 2    50   Input ~ 0
+12V_DC
+Text GLabel 4800 4050 2    50   Input ~ 0
+9V_DC
+Text GLabel 9700 1550 2    50   Input ~ 0
+5V_DC
+Text GLabel 6650 1850 2    50   Input ~ 0
+3V3_DC
+Text GLabel 5400 6400 2    50   Input ~ 0
+12V_DC
+Text GLabel 5400 6250 2    50   Input ~ 0
+9V_DC
+Text GLabel 5400 6100 2    50   Input ~ 0
+5V_DC
+Text GLabel 5400 5950 2    50   Input ~ 0
+3V3_DC
+Entry Wire Line
+	5300 6000 5400 6100
+Entry Wire Line
+	5300 6150 5400 6250
+Entry Wire Line
+	5300 6300 5400 6400
+Entry Wire Line
+	5300 5850 5400 5950
+Text GLabel 5300 5450 0    50   Input ~ 0
+V_STABLE
+$Sheet
+S 6600 3550 2500 1550
+U 61668723
+F0 "12V DC" 50
+F1 "file61668722.sch" 50
+F2 "VCC" I L 6600 4050 50 
+F3 "GND" I L 6600 4150 50 
+F4 "12V_DC" I R 9100 3950 50 
+$EndSheet
+$Sheet
+S 1850 3550 2950 1600
+U 61668844
+F0 "9V DC" 50
+F1 "file61668843.sch" 50
+F2 "VCC" I L 1850 3900 50 
+F3 "GND" I L 1850 4250 50 
+F4 "9V_DC" I R 4800 4050 50 
+$EndSheet
+Wire Bus Line
+	5300 5450 5300 6300
+$EndSCHEMATC

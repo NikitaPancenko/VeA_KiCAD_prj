@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61669000
+P 2000 1750
+F 0 "J1" H 1918 1425 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1918 1516 50  0000 C CNN
+F 2 "" H 2000 1750 50  0001 C CNN
+F 3 "~" H 2000 1750 50  0001 C CNN
+	1    2000 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T1
+U 1 1 61669E29
+P 3050 1700
+F 0 "T1" H 3050 2081 50  0000 C CNN
+F 1 "VPL16-1600  230V AC -> 16V AC" H 3050 1990 50  0000 C CNN
+F 2 "" H 3050 1700 50  0001 C CNN
+F 3 "~" H 3050 1700 50  0001 C CNN
+	1    3050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1650 2200 1500
+Wire Wire Line
+	2200 1500 2650 1500
+Wire Wire Line
+	2200 1750 2200 1900
+Wire Wire Line
+	2200 1900 2650 1900
+Wire Wire Line
+	3450 1500 4100 1500
+$Comp
+L Device:D D2
+U 1 1 6166C893
+P 3950 1700
+F 0 "D2" H 3950 1483 50  0000 C CNN
+F 1 "1N4007" H 3950 1574 50  0000 C CNN
+F 2 "" H 3950 1700 50  0001 C CNN
+F 3 "~" H 3950 1700 50  0001 C CNN
+	1    3950 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 6166FF80
+P 3950 2150
+F 0 "D3" H 3950 1933 50  0000 C CNN
+F 1 "1N4007" H 3950 2024 50  0000 C CNN
+F 2 "" H 3950 2150 50  0001 C CNN
+F 3 "~" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 61670633
+P 4200 1950
+F 0 "D4" V 4246 1870 50  0000 R CNN
+F 1 "1N4007" V 4155 1870 50  0000 R CNN
+F 2 "" H 4200 1950 50  0001 C CNN
+F 3 "~" H 4200 1950 50  0001 C CNN
+	1    4200 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 616713E9
+P 3750 1950
+F 0 "D1" V 3796 1870 50  0000 R CNN
+F 1 "1N4007" V 3705 1870 50  0000 R CNN
+F 2 "" H 3750 1950 50  0001 C CNN
+F 3 "~" H 3750 1950 50  0001 C CNN
+	1    3750 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 1500 4100 1700
+Wire Wire Line
+	4100 1700 4200 1700
+Wire Wire Line
+	4200 1700 4200 1800
+Connection ~ 4100 1700
+Wire Wire Line
+	4200 2100 4200 2150
+Wire Wire Line
+	4200 2150 4100 2150
+Wire Wire Line
+	3800 2150 3750 2150
+Wire Wire Line
+	3750 2150 3750 2100
+Wire Wire Line
+	3750 1800 3750 1700
+Wire Wire Line
+	3750 1700 3800 1700
+Wire Wire Line
+	3750 2150 3450 2150
+Wire Wire Line
+	3450 2150 3450 1900
+Connection ~ 3750 2150
+Wire Wire Line
+	4200 2150 4750 2150
+Connection ~ 4200 2150
+Wire Wire Line
+	3750 1700 3600 1700
+Wire Wire Line
+	3600 1700 3600 2750
+Wire Wire Line
+	3600 2750 4750 2750
+Connection ~ 3750 1700
+$Comp
+L Device:CP C1
+U 1 1 61672A6F
+P 4750 2450
+F 0 "C1" H 4868 2496 50  0000 L CNN
+F 1 "470 uF" H 4868 2405 50  0000 L CNN
+F 2 "" H 4788 2300 50  0001 C CNN
+F 3 "~" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2150 4750 2300
+Wire Wire Line
+	4750 2750 4750 2600
+Wire Wire Line
+	4750 2150 4950 2150
+Connection ~ 4750 2150
+Wire Wire Line
+	4750 2750 4950 2750
+Connection ~ 4750 2750
+Text HLabel 4950 2150 2    50   Input ~ 0
+VCC
+Text HLabel 4950 2750 2    50   Input ~ 0
+GND
+$Comp
+L power:GND #PWR06
+U 1 1 61675AA4
+P 4750 2900
+F 0 "#PWR06" H 4750 2650 50  0001 C CNN
+F 1 "GND" H 4755 2727 50  0000 C CNN
+F 2 "" H 4750 2900 50  0001 C CNN
+F 3 "" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2750 4750 2900
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 6167664C
+P 5050 2900
+F 0 "#FLG01" H 5050 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 3073 50  0000 C CNN
+F 2 "" H 5050 2900 50  0001 C CNN
+F 3 "~" H 5050 2900 50  0001 C CNN
+	1    5050 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2900 4750 2900
+Connection ~ 4750 2900
+$EndSCHEMATC
